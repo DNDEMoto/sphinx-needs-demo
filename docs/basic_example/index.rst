@@ -25,11 +25,32 @@ Sphinx-Needs objects
    .. image:: /_images/sphinx-needs-logo.png
       :width: 50px
 
+
+.. req:: Sliced Bread
+   :id: EX_REQ_999
+   :status: open
+
+   The requirement :need:`EX_REQ_999` is the most important one.
+   But we can also set :need:`a custom link name <EX_REQ_999>`.
+   And we can change the text even more e.g. :need:`[[title]] [[title]] of [[title]] ([[id]] [[status]]) <EX_REQ_999>`.
+
+
 .. spec:: Example Specification
    :id: EX_SPEC_001
    :links: EX_REQ_001
    :tags: security, safety
    :status: closed
+
+   ID以外の表示もここなら可能
+   
+   :need:`EX_REQ_001`
+   
+   :need:`<EX_REQ_001>`
+
+
+   :need:`[[title]] <EX_REQ_001>`
+
+   :need:`[[title]] EX_REQ_001`
 
 
    But also features from integated Sphinx exentions can be used, like this PlantUML generated image from this code
